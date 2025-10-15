@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Casmurro — O Audiobook Completo de Machado de Assis</title>
+    <meta name="description"
+        content="Ouça grátis o audiobook completo de Dom Casmurro, a obra-prima de Machado de Assis. Uma produção sonora imersiva que dá nova vida ao clássico da literatura brasileira.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <a href="#" class="logo">Dom Casmurro <span>— Audiobook</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about-book">Sobre o Livro</a></li>
+                    <li><a href="#chapters">Capítulos</a></li>
+                    <li><a href="#author">Machado de Assis</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="fade-in">Reviva o clássico de Machado de Assis em uma nova experiência sonora.</h1>
+                <a href="#chapters" class="btn-main fade-in">Ouvir Agora</a>
+                <div class="sample-player fade-in">
+                    <p>Amostra: Prólogo</p>
+                    <audio id="sample-audio" src="assets/audio/amostra.mp3"></audio>
+                    <div class="player-controls">
+                        <button id="play-sample-btn" class="play-btn">▶</button>
+                        <div class="progress-bar-container">
+                            <div id="sample-progress-bar" class="progress-bar"></div>
+                        </div>
+                        <span id="sample-time">0:00 / 1:00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-book" class="content-section">
+            <div class="container reveal">
+                <div class="text-content">
+                    <h2>Olhos de Ressaca, Coração de Ciúme</h2>
+                    <p>Narrado em primeira pessoa por Bento Santiago, o "Dom Casmurro", o romance nos transporta para o
+                        Rio de Janeiro do século XIX. A trama revisita suas memórias, desde a infância ao lado da
+                        enigmática Capitu até a vida adulta, marcada por um ciúme avassalador que lança uma sombra de
+                        dúvida sobre a paternidade de seu filho e a fidelidade de sua amada.</p>
+                    <blockquote class="quote">
+                        “Capitu, apesar daqueles olhos que o Diabo lhe deu... Você já reparou nos olhos dela? São assim
+                        de cigana oblíqua e dissimulada.”
+                    </blockquote>
+                </div>
+                <div class="image-content">
+                    <img src="assets/images/capa-livro.png" alt="Capa do livro Dom Casmurro">
+                </div>
+            </div>
+        </section>
+
+        <section id="chapters" class="content-section">
+            <div class="container reveal">
+                <h2>A Obra Completa, Capítulo por Capítulo</h2>
+                <button id="play-all-btn" class="btn-secondary">Ouvir tudo em sequência</button>
+                <div id="chapter-list" class="chapter-list">
+                </div>
+            </div>
+        </section>
+
+        <section id="author" class="content-section">
+            <div class="container reveal">
+                <div class="image-content">
+                    <img src="assets/images/retrato-machado.jpg" alt="Retrato de Machado de Assis">
+                </div>
+                <div class="text-content">
+                    <h2>O Bruxo do Cosme Velho</h2>
+                    <p>Joaquim Maria Machado de Assis, considerado por muitos o maior nome da literatura brasileira, foi
+                        um mestre do realismo psicológico. Fundador e primeiro presidente da Academia Brasileira de
+                        Letras, sua obra é marcada por uma ironia fina, pessimismo e uma profunda análise da alma
+                        humana, explorando temas como a loucura, o ciúme e as convenções sociais.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <p class="final-phrase">“Dom Casmurro — uma obra imortal, agora em som.”</p>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="YouTube">YT</a>
+                <a href="#" aria-label="Spotify">SP</a>
+            </div>
+            <p class="contact-email">contato@domcasmurroaudiobook.com</p>
+            <p class="copyright">&copy; 2025 | Dom Casmurro Audiobook. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="global-player" class="global-player">
+        <div class="container player-content">
+            <div id="track-info">Ouvindo: <span></span></div>
+            <audio id="main-audio"></audio>
+            <div class="player-controls-global">
+                <button id="prev-btn">⏮</button>
+                <button id="play-global-btn" class="play-btn">▶</button>
+                <button id="next-btn">⏭</button>
+            </div>
+            <div class="progress-bar-container-global">
+                <div id="global-progress-bar" class="progress-bar"></div>
+            </div>
+            <button id="close-player-btn">×</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
